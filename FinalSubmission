@@ -1,0 +1,32 @@
+# FastAPI URL Shortener
+
+This is a simple project to create short URLs from long ones using FastAPI and SQLite.
+
+## Features
+
+- Make short links
+- Set time limit for each link
+- Use your own short code (optional)
+- Get details of short links
+- Logs requests and errors to external service
+
+## Tools Used
+
+- FastAPI
+- SQLite (with SQLAlchemy)
+- Pydantic
+- ShortUUID
+
+## API Endpoints
+
+### POST /shorten
+
+To create a short URL
+
+**Request body:**
+```json
+{
+  "url": "very-long-url-without-http-and-slashes",
+  "validity_minutes": 30,
+  "custom_shortcode": "abcd1"
+}
