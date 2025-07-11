@@ -59,7 +59,7 @@ def get_db():
     finally:
         db.close()
 
-@app.post("/shorten", response_model=ShortenResponse)
+@app.post("/shorturls", response_model=ShortenResponse)
 async def make_short_url(user_data: ShortenRequest, db: Session = Depends(get_db)):
     short_code = user_data.custom_shortcode or make_random_code()
 
