@@ -1,7 +1,6 @@
 import httpx
 
-BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJodmlqYXB1cmFtQGdtYWlsLmNvbSIsImV4cCI6MTc1MjIxNDQwMSwiaWF0IjoxNzUyMjEzNTAxLCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiNzQ5NzA4OTktMGYzOC00ODIwLWI4OGYtNjZmNGNmZDFmMmQxIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoidmlqYXB1cmFtIGhhcnNoYXZhcmRoYW4iLCJzdWIiOiJlZWJjMGM0Zi0zNjdhLTRhN2QtOTY0NC0xYjNhNGE4ZWQ1NTAifSwiZW1haWwiOiJodmlqYXB1cmFtQGdtYWlsLmNvbSIsIm5hbWUiOiJ2aWphcHVyYW0gaGFyc2hhdmFyZGhhbiIsInJvbGxObyI6IjIyNjkxYTA1NzEiLCJhY2Nlc3NDb2RlIjoiY2FWdk5IIiwiY2xpZW50SUQiOiJlZWJjMGM0Zi0zNjdhLTRhN2QtOTY0NC0xYjNhNGE4ZWQ1NTAiLCJjbGllbnRTZWNyZXQiOiJiaEpZd3JVQlpnUWJBcXR6In0.BTDsWJ8Au_8i_0pc-LtJWZOGCCm4ALjuMpg9LuNqE2M"
-
+BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJodmlqYXB1cmFtQGdtYWlsLmNvbSIsImV4cCI6MTc1MjIxNTY1OSwiaWF0IjoxNzUyMjE0NzU5LCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiOWJkZDcwYTgtYWJjYi00MDU1LTljNjQtOGY3ZmYxNGMwMGUxIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoidmlqYXB1cmFtIGhhcnNoYXZhcmRoYW4iLCJzdWIiOiJlZWJjMGM0Zi0zNjdhLTRhN2QtOTY0NC0xYjNhNGE4ZWQ1NTAifSwiZW1haWwiOiJodmlqYXB1cmFtQGdtYWlsLmNvbSIsIm5hbWUiOiJ2aWphcHVyYW0gaGFyc2hhdmFyZGhhbiIsInJvbGxObyI6IjIyNjkxYTA1NzEiLCJhY2Nlc3NDb2RlIjoiY2FWdk5IIiwiY2xpZW50SUQiOiJlZWJjMGM0Zi0zNjdhLTRhN2QtOTY0NC0xYjNhNGE4ZWQ1NTAiLCJjbGllbnRTZWNyZXQiOiJiaEpZd3JVQlpnUWJBcXR6In0.L68X_u3gtrLfKtAyM9soGUsswksf3EOvtydk_EuRyUg"
 LOG_URL = "http://20.244.56.144/evaluation-service/logs"
 
 async def Log(stack: str, level: str, package: str, message: str):
@@ -35,4 +34,7 @@ async def Log(stack: str, level: str, package: str, message: str):
 Log sent: {'logID': 'fe56ac59-cbec-4044-bb5a-8d8f2372c19f', 'message': 'log created successfully'}
 Log sent: {'logID': '5f6ab72e-28f7-4808-899b-e0ecb2163a07', 'message': 'log created successfully'}
 Log sent: {'logID': 'db59b88b-43f2-485a-9337-e1952e19391d', 'message': 'log created successfully'}
+Log sent: {'logID': 'd1db5aaa-f0e4-425e-8b58-3bd56356efde', 'message': 'log created successfully'}
+Log sent: {'logID': 'ccd90261-3765-4b15-96e1-18ccc671a1f1', 'message': 'log created successfully'}
+Log sent: {'logID': '4799334c-2e86-46d9-9249-0d4670f8a08d', 'message': 'log created successfully'}
 """
